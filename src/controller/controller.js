@@ -1,5 +1,5 @@
-const express = require('express');
-const service = require('../service/service');
+import express from 'express';
+import service from '../service/service.js';
 
 const getUser = async (req, res) => {
   const user = await service.getUser(req.params.id);
@@ -15,4 +15,4 @@ const createUser = async (req, res) => {
   res.status(201).json(user);
 }
 
-module.exports = { getUser, getUsers, createUser }
+export default { getUser, getUsers, createUser }

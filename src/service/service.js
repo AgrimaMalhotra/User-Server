@@ -1,5 +1,5 @@
-const express = require('express');
-const data = require('../models');
+import express from 'express';
+import data from '../models/index.js';
 
 const getUser = async (id) => {
   return data.users[Number(id) - 1];
@@ -19,4 +19,4 @@ const createUser = async (user) => {
   return newUser;
 }
 
-module.exports = { getUser, getUsers, createUser }
+export default { getUser, getUsers, createUser }

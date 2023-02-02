@@ -1,5 +1,4 @@
-const db =
-{
+const data = {
   users:
     [
       {
@@ -13,6 +12,6 @@ const db =
         email: "user2@gmail.com"
       }
     ]
-}
+};
 
-module.exports = db;
+export default data;
